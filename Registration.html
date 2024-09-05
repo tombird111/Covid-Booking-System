@@ -1,0 +1,25 @@
+<html>
+<head>
+<link rel="stylesheet" href="GuidedStyle.css">
+</head>
+<body>
+
+<div class = "pageheader" align = "center">
+Covid-19 Contact Tracing
+</div>
+
+<div class = "wrap" align = "center">
+ <img class = "watermark" src = "watermark.png">
+ <div class = "content">
+  <form class = "loginform" method = "post" action = "registerFunction.php">
+   <input type ="text" name = "fname" placeholder = "Name" id = "smallermargins" class = "textinput"><span><?php echo $fnameErr?></span><br>
+   <input type ="text" name = "sname" placeholder = "Surname" id = "smallermargins" class = "textinput"><br>
+   <input type ="text" name = "uname" placeholder = "Username" id = "smallermargins" class = "textinput"> <span><?php echo $unameErr?></span><br>
+   <input type ="text" name = "pword" placeholder = "Password" id = "smallermargins" class = "textinput"><span><?php echo $pwordErr?></span><br>
+   <input type ="submit" name = "register" value = "Register" class = "inputbutton largebutton">
+  </form>
+ </div>
+</div>
+
+</body>
+</html>
